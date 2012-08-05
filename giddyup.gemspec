@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "giddyup"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["kellydunn"]
@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "bin/giddyup",
+    "giddyup.gemspec",
     "lib/giddyup.rb",
     "lib/giddyup/runner.rb",
     "lib/giddyup/util.rb",
