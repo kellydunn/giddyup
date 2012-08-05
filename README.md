@@ -24,7 +24,6 @@ Post gists without leaving your terminal! yehaw
 
 # TODOs
 
-- print url of gist after posting
 - credentials file for people not on my computer :P
 
 
