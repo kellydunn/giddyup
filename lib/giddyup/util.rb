@@ -27,8 +27,8 @@ module Giddyup
       req.body = params.to_json
       req["content-type"] = "application/json"
       Net::HTTP.start(uri.host, uri.port, :use_ssl => true) do |http|
-        # TODO print url of gist afterwards
-        http.request(req)
+        request = http.request(req)
+        puts JSON.parse(request.body)["html_url"]
       end
     end
   end
