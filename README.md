@@ -12,4 +12,19 @@
 ```
 # what
 
-yehaw
+Post gists without leaving your terminal! yehaw
+
+# installation
+
+`gem install giddyup`
+
+# usage
+
+`giddyup /path/to/file/to/gist`
+
+# TODOs
+
+- print url of gist after posting
+- credentials file for people not on my computer :P
+
+
