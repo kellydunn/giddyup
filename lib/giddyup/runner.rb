@@ -10,16 +10,17 @@ module Giddyup
 
       def parse_options(args)
         value = args.shift
-        error "WHERES MY FILE щ(ಠ益ಠщ)" if value.nil? || !valid_file(path)
+        error "WHERES MY FILE щ(ಠ益ಠщ)" if value.nil? || !valid_file(value)
         files = args.inject([value]) do |acc, arg|
-          acc << arg if valid_file(path)
+          acc << arg if valid_file(arg)
           acc
         end
         files
       end
 
       def valid_file(path)
-        File.exists?(File.join(__FILE__, path))
+        cwd = `pwd`.strip
+        File.exists?(File.join(cwd, path))
       end
     end
   end
